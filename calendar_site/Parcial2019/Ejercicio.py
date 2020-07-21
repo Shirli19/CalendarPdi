@@ -1,5 +1,5 @@
-from Parcial2019 import funciones
-from Parcial2019 import pdifun
+from . import funciones
+from . import pdifun
 import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -50,7 +50,8 @@ def recortarImagen(imagen):
 #nombreImagen = "test05_19p_8L_332.png" ## 19 - 3
 
 def resolucion(nombreImagen): 
-    imagen = cv.imread('./Parcial2019/'+nombreImagen)
+    #print(nombreImagen)
+    imagen = cv.imread('./calendar_site/Parcial2019/'+nombreImagen)
 
     #cv.imshow("Edificio", imagen)
     #cv.waitKey(0)
