@@ -225,10 +225,11 @@ def resolucion(nombreImagen):
     for i in range(cantidad_edificioI):
         print("Posicion ventana iluminada : piso {} departamento {}".format(piso[i], columna[i]))
 
-    cv.imshow("Edificio Recortado", imagen_recortada)
-    cv.waitKey(0)
+   # cv.imshow("Edificio Recortado", imagen_recortada)
+   # cv.waitKey(0)
 
-    cv.destroyAllWindows()
+   # cv.destroyAllWindows()
+    print("terminando")
     return "Cantidad de edificios apagados: {}".format(cantidad_edificioA) 
 ### Segmentar edificio
 # H 100 - 120

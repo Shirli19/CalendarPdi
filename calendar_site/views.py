@@ -10,4 +10,5 @@ def hello_world(request):
 def calendar(request, data):
    # data = User.objects.get(data=data)
     result = Ejercicio.resolucion(data)
+    print(result)
     return HttpResponse(result)

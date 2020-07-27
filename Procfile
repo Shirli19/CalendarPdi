@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn calendarpdi2020.wsgi --log-file -
