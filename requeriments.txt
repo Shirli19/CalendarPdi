@@ -2,6 +2,7 @@ asgiref==3.2.10
 cycler==0.10.0
 decorator==4.4.2
 Django==3.0.8
+gunicorn==20.0.4
 imageio==2.9.0
 joblib==0.16.0
 kiwisolver==1.2.0
@@ -12,6 +13,7 @@ opencv-python==4.3.0.36
 Pillow==7.2.0
 pyparsing==2.4.7
 python-dateutil==2.8.1
+python-decouple==3.3
 pytz==2020.1
 PyWavelets==1.1.1
 scikit-image==0.17.2
@@ -22,3 +24,4 @@ sklearn==0.0
 sqlparse==0.3.1
 threadpoolctl==2.1.0
 tifffile==2020.7.24
+whitenoise==5.1.0
