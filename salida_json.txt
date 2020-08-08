@@ -1,0 +1,16 @@
+###### Detectar matrices de los días y posiciones de cada mes para luego obtener los eventos
+        ###### Obtener los eventos del mes
+        salida = {}
+        salida['eventos'] = []
+        for nro_mes, (mes_bin, mes_color) in enumerate(zip(meses_recortados_pre_procesados, meses_recortados_pre_procesados_color)):
+            
+            mat_con_dias, pos_cols, pos_filas = detectar_dias.detectar_dias_posiciones(mes_bin, nro_mes+1)
+            eventos = obtener_eventos.obtener_eventos(mat_con_dias, pos_cols, pos_filas, mes_color, nro_mes+1)
+            print(eventos)
+            if len(eventos) != 0: # si se encontraron eventos en este mes
+                print('\n-- Eventos del mes de:', inicializar.nombre_meses[nro_mes], ' --')
+                [print(ev) for ev in eventos]
+                salida['eventos'].append({
+                    inicializar.nombre_meses[nro_mes]: eventos
+                })
+        print(salida['eventos'])
